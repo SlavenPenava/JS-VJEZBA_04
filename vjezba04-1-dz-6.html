@@ -1,0 +1,26 @@
+<!DOCTPYE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>JS osnove</title>
+</head>
+<body>
+<script type="text/javascript">
+let polje = new Array(1,2,3,4,7,8,5,6,9,55,74,11,33);
+document.write(polje.length+"<br>");
+polje.sort((a,b) => b - a);
+document.write(polje+"<br>");
+polje.sort((a,b) => a - b);
+document.write(polje+"<br>");
+let len=polje.length;
+//polje.pop(polje.length);
+polje.splice(len-1,1);
+document.write(polje+"<br>");
+polje.push(19,22);
+document.write(polje+"<br>");
+let polje2 = new Array("Banana","Orange","Apple","Mango");
+let polje_final=polje.concat(polje2);
+document.write(polje_final+"<br>");
+</script>
+</body>
+</html>
